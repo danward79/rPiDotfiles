@@ -1,0 +1,8 @@
+#.export is a central list of all exports
+
+#GOLANG Paths
+export GOPATH=~/go/bin/
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOPATH:$GOBIN
+
+echo ".exports complete.."
