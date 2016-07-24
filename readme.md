@@ -4,8 +4,6 @@ This is a repo of the dot files used for my pi devices. Except my .private keys.
 
 This [guide](https://dotfiles.github.io) really helped as did [this](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.qmgph96y5)
 
-The slides in this presentation are also interesting [A storm Homebrewin'](https://speakerdeck.com/anahkiasen/a-storm-homebrewin)
-
 ## To install
 Clone repo
 ``` bash
