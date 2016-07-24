@@ -7,7 +7,7 @@ This [guide](https://dotfiles.github.io) really helped as did [this](https://med
 ## To install
 Clone repo
 ``` bash
-git clone https://github.com/danward79/.dotfiles.git && cd .dotfiles
+git clone https://github.com/danward79/rPiDotfiles.git && cd .dotfiles
 ```
 then ...
 ``` bash
