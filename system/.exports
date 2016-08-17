@@ -1,8 +1,13 @@
 #.export is a central list of all exports
 
 #GOLANG Paths
-export GOPATH=~/go/bin/
+export GOPATH=~/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH:$GOBIN
+
+#Linuxbrew
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 echo ".exports complete.."

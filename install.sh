@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 echo "Install .files"
 
+#Get root password
+sudo -v
+
 #Determine install/dotfiles folder
 export DOTFILEPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo ".file Path: $DOTFILEPATH"
 
 #Private Key file creation
 echo ".private creation"
+
+mkdir $DOTFILEPATH/private
+
 if [ ! -e $DOTFILEPATH/private ]; then
   echo "creating private folder"
   mkdir private
@@ -45,7 +51,14 @@ echo "Symlink to new files"
 ln -sfv "$DOTFILEPATH/.bashrc" ~
 ln -sfv "$DOTFILEPATH/.bash_logout" ~
 
-# Finally reload the shell
+#Install Linuxbrew
+sudo apt-get install build-essential curl git python-setuptools ruby
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+
+#Install GOLANG
+#brew install golang
+
+#Finally reload the shell
 echo "Install complete...."
 echo "Reloading shell"
 exec $SHELL -l
