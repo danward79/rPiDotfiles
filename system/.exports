@@ -2,8 +2,8 @@
 
 #GOLANG Paths
 export GOPATH=~/go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOPATH:$GOBIN
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOPATH:$GOROOT/bin
 
 #Linuxbrew
 export PATH="$HOME/.linuxbrew/bin:$PATH"
